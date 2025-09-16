@@ -9,5 +9,3 @@ The goal of this research project is to identify what is preventing these existi
 The primary output will be a published report, informed by a literature review to surface the existing understanding of what is and isn’t working today, along with 10+ interviews with domain experts and two workshops to test the proposals and iterate based on feedback from active practitioners in the space.
 
 The report will examine the political economy of the NHS and how it intersects with the tools and processes of software engineering to discover why a protocols- and standards-based approach to digital transformation has not taken off yet, despite evident investment in standards and devolved authority to choose different solutions, which should already be selecting for interoperability as a feature.
-
-The current government has made rejuvenating the NHS its core priority. There is an opportunity here to harness the [digital public infrastructure expertise at UCL](https://dpimap.org) to shape the academic debate and directly inform national policy.

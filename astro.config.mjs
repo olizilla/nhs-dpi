@@ -12,14 +12,7 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Research',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Digital innovation in the NHS', slug: 'research/digital-innovation-in-the-nhs' },
-					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					autogenerate: { directory: 'research' },
 				},
 			],
 			customCss: ['./src/styles/global.css'],

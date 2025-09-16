@@ -1,6 +1,8 @@
 ---
 title: 'Digital Innovation in the NHS: Exploring the New Ten Year Plan with Hatim Abdulhussein'
 description: Notes on a disscusion between Dr Victoria Betton & Hatim Abdulhussein
+sidebar:
+  label: Digital Innovation in the NHS
 ---
 
 _Notes on a discussion. Transcribed manually. Personal musings interjected._
@@ -11,31 +13,37 @@ Dr Victoria Betton is the author of Towards a [Digital Ecology - NHS Digital Ado
 
 Hatim Abdulhussein is a practicing GP, CEO of Health Innovation Kent Surrey Sussex, and Honorary Professor of Innovation and AI at the University of Surrey.
 
-## Notes
+## Health innovation Networks
 
-Health innovation networks (HINs) find test and scale innovations to solve challenges in the NHS. there are 15 across the country.
+Health innovation networks (HINs) find, test, implement, and scale innovations to solve challenges in the NHS. and support economic growth in their region. bring the right people together to drive change
+there are 15 across the country.
 
-"HINs are adjacent to the system not deep with in it" - shades of dynamic stability
+VB: "it's important that HINs are adjacent to the system not deep with in it" - shades of Creative Bureaucracy dynamic stability.
 
-The 10 year plan - it's ambitious - It defines 3 main transitions. each requires digital innovation.
-- analogue to digital
-- acute to community (not so much GP, but actually into the community)
-- sickness to prevention
+## The 10 year plan
 
-The 10 yr plan is achievable. it sets the right tone. some big changes
+The 10 year plan - it's ambitious - It talks about 3 big shifts.
+- from analogue to digital
+- from acute to community (not so much GP, but actually into the community)
+- from sickness to prevention
+
+each of these shits requires digital tech to enable them.
+
+**The 10 yr plan is achievable**. it sets the right tone. some big changes
 - the nhs app (front door)
 - single patient record (how data is stored)
 
-VB: crit: it's asperations, not a plan. to realise the ambition what do we need? (e.g no plan, no money?)
+VB: A critical response to it is that it's just aspirations, not a plan (e.g no implementation detail, no money). to realise the ambition what do we need? 
 
-How do you transform training journeys... etc... things we've been talking about for ages. it's good to have them written down. we know that top down doesn't always work, so perhaps it it's good that there isn't an implementation section. the ingredients are there, but it's gonna need careful going through.
+How do you transform HR or training journeys using tech... etc... things we've been talking about for ages. i's good to have them written down. we know that top down doesn't always work, so perhaps it it's good that there isn't an implementation section. the ingredients are there, but it's gonna need careful going through and clear engagement... 
 
-VB: what should be done once nationally, and what should be done locally?
+**what should be done once nationally, and what should be done regionally, what locally and what for providers?**
 
-National should set policy and strategy...frameworks/pricing/procurement policy then allow a region to explore, and support a rollout at scale. figure out who are the right champions to push forward on the next thing that is not the current priority. (response to previous failures like going too big with "do it once" mentality, and not taking people with you when you push to fast)
+VB: do it once, but too big, and not taking people with you has been a problem.
 
-align ambition with tech with what we are trying to solve...
-e.g. neighbourhood health impementation... what will help? single patient record and nhs app are gonna help there. worth scaling.
+National should set policy and strategy...frameworks/pricing mechanism/procurement policy then allow a region to explore, and support a rollout at scale. figure out who are the right champions to push forward on the next thing that is not the current priority.
+
+Align ambition with tech with what we are trying to solve e.g. neighbourhood health implementation... what will help? single patient record and nhs app are gonna help there. worth scaling.
 
 if productivity is a priority, what tools will help? if waiting lists are priority? what digital services are gonna help that. set that at a national level and regional. create the ingredients and share them.
 
@@ -116,8 +124,10 @@ sustainability and spend. we need to procure so we get the best over reasonable 
 
 NHS is so complex. how do we bring everyone along. we have failed in the past. how do we avoid that mistake again. we must engage. we must co-design.
 
-VB: that takes some resource! it rarely happens
+VB: that takes some resource! i rarely see them executed well!
 
-VB: whats your bet on the 10 year plan?
+VB: whats your boldest bet on the 10 year plan?
 
-the acute to community shift... the other 2 come with that. if you move care closer to peoples homes. you will make a massive difference. most people do not want to go to hospital. most people go to GPs to avoid going to hospital... and most people
+the acute to community shift... more so than analog -> digital, sickness -> prevention...  other 2 shifts will come if we get the acute to community shift right. a shift closer out of hospitals, closer to there homes, closer to there devices. If you move care closer to peoples homes. you will make a massive difference. most people do not want to go to hospital. most people go to GPs to avoid going to hospital... the reason why people go to A&E sometimes innapropriately is becuase they dont have access to a service elsewhere.
+
+if we can fundamentally change how services fit around people and communities, powered by tech, we will have achieved a very differnt health service than we live in now and one ready for future societal changes.
