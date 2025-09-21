@@ -4,12 +4,6 @@
 @import 'tailwindcss/theme.css' layer(theme);
 @import 'tailwindcss/utilities.css' layer(utilities);
 
-@theme {
-	/*
-	Configure your Tailwind theme that will be used by Starlight.
-	https://starlight.astro.build/guides/css-and-tailwind/#styling-starlight-with-tailwind
-	*/
-}
 /* see: https://starlight.astro.build/guides/css-and-tailwind/#color-theme-editor */
 /* Dark mode colors. */
 :root {

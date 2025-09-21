@@ -10,12 +10,74 @@ The primary output will be a published report, informed by a literature review t
 
 The report will examine the political economy of the NHS and how it intersects with the tools and processes of software engineering to discover why a protocols- and standards-based approach to digital transformation has not taken off yet, despite evident investment in standards and devolved authority to choose different solutions, which should already be selecting for interoperability as a feature.
 
+## Recommended Reading
+
+- Betton, V. (2022). _Towards a Digital Health Ecology: NHS Digital Adoption through the COVID-19 Looking Glass_. CRC Press. https://doi.org/10.1201/9781032198798
+- Plunkett, J. (2025, September 17). What does digital-era healthcare really mean? https://medium.com/@jamestplunkett/what-does-digital-era-healthcare-really-mean-dad6565dba05
+- vitalwave (2023). Digital Public Infrastructure for Health: Charting a path to implementation in LMIC health systems — vitalwave. https://vitalwave.com/article-presentation/digital-public-infrastructure-for-health/
+
 ## Themes
 
 Emerging themes from the research that overlap with [IIPP](https://www.ucl.ac.uk/bartlett/public-purpose) thinking
 
 - **Standards vs Autonomy** - Trusts can ignore national level efforts if they dont deliver what they want. Local providers may selectively ignore legislated requirements to deliver a feature that is asked for. Once a system is deployed and used by healthcare workers it is hard to make the argument that it should be disabled because it doens't meet a legislative requirement. The trust wont hold the provider to account it if it does what they want. (source: MF)
 - Cross region **interop** is always someone elses problem, never the feature that an individual trust wants to pay for  (source: paraphrasing gordon guthrie and personal intuition)
-- **Funding** - NHS digital projects still wrestling with capital based funding model that expects assets to be created. (sources: MF, VB)
-- **Procurement** - Not embedding public value conditions in contracts with large providers. Hard to change procurement change of larger trusts (source: VB)
-- Where does **innovation** happen - Regional Health Innovation Networks "exist adjacent to the system not deep with in it" connects with creative beauracracies thinking (source: VB). A lack of stability in the NHS org structure, with roles.
+- **Funding** - NHS digital projects still wrestling with capital based funding model that expects assets to be created. (sources: MF, VB)... Positve move from NHS Tariff price list for activities towards block payments allowing freedom to focus on outcomes rather than actions under the new [NHS Payment Scheme](https://www.england.nhs.uk/pay-syst/nhs-payment-scheme/)
+- **Procurement** - Not embedding public value conditions in contracts with large providers. Hard to change procurement process of larger trusts (source: VB)
+- Where does **innovation** happen - Regional **Health Innovation Networks** "exist adjacent to the system not deep with in it" connects with creative beauracracies thinking (source: VB). A lack of stability in the NHS org structure, with roles.
+
+## Scale
+
+There are a massive **23,000 IT systems** that connect to the NHS Spine...it is not uncommon for NHS trusts to have well over **100 official clinical systems across one organisation** (Betton, 2022, p.17)
+
+
+## Electronic patient record providers stifle the market
+
+Electronic Patient Records (EPR) systems are a big piece of the puzzle. Large incubent companies move slowly, primarly responding to legislative requirements rather than innovating. 
+
+At the same time they stifle or purchase competition and related services, preferring to contintually expand the scope of their software (lock in) rather than offering ineroperable apis that encourage 
+
+- The software is mission critical. It's how a trust records and schedules interactions with patients.
+- Lots of trusts use sotware from Epic or Cerner, both US-based companies.
+- e.g Manchester University NHS Foundation Trust signed a 15-year contract worth £181m with Epic in 2020 (Betton, 2022)
+- In primary care, two IT suppliers, EMIS and TPP, dominate the market, providing electronic patient records to 95% of GPs. (Betton, 2022)
+
+### OpenMRS
+
+An open source Electronic Patient Record system. Promising but can become another silo as is currently usually deployed as standlone system.
+
+![screenshot of openMRS web app](./src/assets/images/openmrs-screenshot.png)
+
+
+## Fast Healthcare Interoperability Resources (🔥 FHIR)
+
+FHIR ...uses a modern web-based suite of API technology, including a HTTP-based RESTful protocol, and a choice of JSON, XML or RDF for data representation. One of its goals is **to facilitate interoperability between legacy health care systems**...
+
+FHIR provides an alternative to document-centric approaches by directly exposing discrete data elements as services. For example, basic elements of healthcare like patients, admissions, diagnostic reports and medications can each be retrieved and manipulated via their own resource URLs.
+
+> “Standards in healthcare data and systems are like toothbrushes,” he tells me, “everyone has one, but nobody is prepared to share.”
+> 
+> However, clouds are making way for blue skies in the shape of a new standard for integration called HL7 FHIR. David Hancock (co-chair of INTEROpen) believes that **HL7 FHIR, at last, gives a comprehensive, universal, open standard that really is a standard and not just a guide**, as previous healthcare interoperability standards have been.” (Betton, 2022, p.288)
+
+see: [FHIR intro slides](https://www.hl7.org.uk/wp-content/uploads/HL7UK_Media/Documents/Technical/HL7_UK_FHIR_and_JSON_20140203.pdf)
+
+see: https://en.wikipedia.org/wiki/Fast_Healthcare_Interoperability_Resources
+
+see: https://digitalsquare.org/resourcesrepository/2023/10/26/digital-public-infrastructure-for-health
+
+OpenHIE identifies [HAPI FHI](https://hapifhir.io/) as a reference SHR (Shared Health Record) application, and FHIR
+servers are emerging as platforms that can function as shared health
+record services. These are implemented at scale in primarily high-income
+country HIEs, including in the United Kingdom (NHS), Canada, Australia,
+and Japan. 
+
+
+## Prior art
+
+In one of many warnings that we have all been here before The Public Accounts Committee found in 2020 that:
+
+> The Department’s previous attempt to reform how the NHS uses IT, running between 2002 and 2011, was both expensive and largely unsuccessful. **We are therefore alarmed at how little progress has been made against current ambitions.** The NHS missed its main target for a ’paperless’ NHS by 2018, and this has now been watered down... 
+>
+> Despite being recognised as essential to managing patient care, there has also been a lack of progress on interoperability. Only three out of the ten standards for interoperability so far identified by NHS Digital were ready by May 2020, and the national bodies are unable to tell us how many are now ready.
+
+see: https://committees.parliament.uk/publications/3315/documents/31262/default/
