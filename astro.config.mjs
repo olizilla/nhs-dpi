@@ -11,6 +11,15 @@ export default defineConfig({
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/olizilla/nhs-dpi' }],
 			sidebar: [
 				{
+					label: 'Maps',
+					items: [
+						{ 
+							label: 'Distinct EPR Systems per County',
+							link: '/map'
+						}
+					]
+				},
+				{
 					label: 'Research',
 					autogenerate: { directory: 'research' },
 				},

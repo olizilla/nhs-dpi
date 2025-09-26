@@ -1,0 +1,61 @@
+---
+import json from '../assets/Counties_1981_Boundaries_simple.topo.json'
+import erps from '../assets/epr-england.json'
+import * as d3 from 'd3-geo'
+import topojson from 'topojson-client'
+
+const erpMap = new Map()
+
+erps.forEach(x => {
+  let key = x.County.toUpperCase()
+  const arr = erpMap.get(key) ?? []
+  if (!arr.includes(x.EPR)) {
+    arr.push(x.EPR)
+  }
+  erpMap.set(key, arr)
+})
+
+function getEPRs (name: string) {
+  const alias = new Map([
+    ['OUTER LONDON', 'GREATER LONDON'],
+    ['INNER LONDON', 'GREATER LONDON'],
+    ['HUMBERSIDE', 'LINCOLNSHIRE'],
+    ['HEREFORD AND WORCESTER', 'WORCESTERSHIRE'],
+    ['CORNWALL AND ISLES OF SCILLY', 'CORNWALL'],
+    ['AVON', 'WILTSHIRE'],
+    ['DURHAM', 'COUNTY DURHAM'],
+    ['CLEVELAND','COUNTY DURHAM']
+  ])
+  const key = alias.get(name) ?? name
+  return erpMap.get(key) ?? []
+}
+
+const { features } = topojson.feature(json, 'Counties_1981_Boundaries_EW_simple.topo.json')
+const projection = d3.geoMercator().scale(2000).center([7.4, 51.5])
+const path = d3.geoPath(projection)
+const width = 300
+const height = 400
+
+function erpToClass (arr) {
+  if (!Array.isArray(arr)) return 'fill-epr-count-no-data' // error
+  if (arr.length === 0) return 'fill-epr-count-no-data' // no data
+  if (arr.length === 1 && arr[0].trim() === 'No EPR') return 'fill-epr-count-0' // no EPR
+  return `fill-epr-count-${arr.length}`
+}
+
+---
+<svg class="bg-white" viewBox={`0 0 ${width} ${height}`} version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g class="regions">
+  { features.map(feature => {
+    const county = feature.properties.CTY81NM
+    return (
+      <g>
+        <title>{county}
+{getEPRs(county).join(',')}
+        </title>
+        <path d={path(feature)} class={erpToClass(getEPRs(county))} stroke="#acc" style="stroke-width: 0.5px;"></path>
+      </g>
+    )
+  })}
+  </g>
+</svg>

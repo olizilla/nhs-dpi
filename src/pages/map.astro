@@ -1,0 +1,29 @@
+---
+// Import the `<StarlightPage>` component first to set up cascade layers.
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+
+import MapSvg from '../components/MapSvg.astro'
+
+---
+<StarlightPage frontmatter={{ title: 'Distinct EPR Systems per County' }}>
+  <p>
+    <code>source</code>
+    <code><a class="font-bold no-underline" href="https://6b.health/insight/list-of-eprs-in-nhs-trusts-in-england/">6b.health</a></code>
+  </p>
+  <p class="italic">How many Electronic Patient Records systems are in use across a given County in England.</p>
+  <div>
+    <div class="font-bold">Legend</div>
+    <div class="flex flex-row items-end justify-items-start text-sm">
+      <div title="0" class={`h-6 w-6 flex-none text-center bg-epr-count-0 m-0 p-0 text-black`}>0</div>
+      {Array(5).keys().map(x => (
+        <div title={x+1} class={`h-6 w-6 flex-none text-center bg-epr-count-${x+1} m-0 p-0`}>{x+1}</div>
+      ))}
+      {Array(5).keys().map(x => (
+        <div title={x+6} class={`h-6 w-6 flex-none text-center bg-epr-count-${x+6} m-0 p-0 text-white`}>{x+6}</div>
+      ))}
+    </div>
+  </div>
+  <MapSvg/>
+  <p>Note: this is deliberately course grained at the moment because, it's a bit of work to extract polygons for the boundaries at the NHS Trust level, and also that would be too much information at this zoom level. This is an infographic intended to quickly demonstrate that there are a surprising number of distinct electronic patient records systems in any one county and to focus initial attention on the counties that have the most.</p>
+  <p><strong>Convergence on a single provider is absolutely not the goal.</strong> That way lies monopoly and rent extraction. The point is more that we absolutely have to have some common rails for these systems to interoperate with.</p>
+</StarlightPage>
