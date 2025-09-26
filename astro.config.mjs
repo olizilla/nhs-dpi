@@ -15,7 +15,7 @@ export default defineConfig({
 					items: [
 						{ 
 							label: 'Distinct EPR Systems per County',
-							link: '/map'
+							link: '/map/distinct-epr-per-county/'
 						}
 					]
 				},
