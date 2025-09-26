@@ -5,7 +5,7 @@ import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 import MapSvg from '../components/MapSvg.astro'
 
 ---
-<StarlightPage frontmatter={{ title: 'Distinct EPR Systems per County' }}>
+<StarlightPage frontmatter={{ title: 'Distinct EPR Systems per County', tableOfContents:false }}>
   <p>
     <code>source</code>
     <code><a class="font-bold no-underline" href="https://6b.health/insight/list-of-eprs-in-nhs-trusts-in-england/">6b.health</a></code>
@@ -24,6 +24,6 @@ import MapSvg from '../components/MapSvg.astro'
     </div>
   </div>
   <MapSvg/>
-  <p>Note: this is deliberately course grained at the moment because, it's a bit of work to extract polygons for the boundaries at the NHS Trust level, and also that would be too much information at this zoom level. This is an infographic intended to quickly demonstrate that there are a surprising number of distinct electronic patient records systems in any one county and to focus initial attention on the counties that have the most.</p>
+  <p>This is deliberately course grained at the moment because, it's a bit of work to extract polygons for the boundaries at the NHS Trust level, and also that would be too much information at this zoom level. This is an infographic intended to quickly demonstrate that there are a surprising number of distinct electronic patient records systems in any one county and to focus initial attention on the counties that have the most.</p>
   <p><strong>Convergence on a single provider is absolutely not the goal.</strong> That way lies monopoly and rent extraction. The point is more that we absolutely have to have some common rails for these systems to interoperate with.</p>
 </StarlightPage>
